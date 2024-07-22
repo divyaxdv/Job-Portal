@@ -13,8 +13,8 @@ import { Loader2 } from 'lucide-react'
 
 const Login = () => {
     const [input, setInput] = useState({
-        email: "dv@gmail.com",
-        password: "dv123",
+        email: "",
+        password: "",
         role: ""
     });
     const { loading, authUser } = useSelector(store => store.auth);
@@ -66,7 +66,7 @@ const Login = () => {
                             name="email"
                             value={input.email}
                             onChange={changeEventHandler}
-                            placeholder="patel@gmail.com"
+                            placeholder="abc@gmail.com"
                         />
                     </div>
                     <div className='my-2'>
